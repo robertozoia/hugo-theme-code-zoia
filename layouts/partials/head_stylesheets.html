@@ -1,0 +1,5 @@
+{{- $critical := resources.Get "/css/styles.css" | resources.ToCSS }}
+{{- if hugo.IsProduction }}
+{{- $critical = resources.Get "/css/styles.css" | resources.ToCSS | resources.Minify }}
+{{- end }}
+<style>{{ $critical.Content | safeCSS }}</style>
