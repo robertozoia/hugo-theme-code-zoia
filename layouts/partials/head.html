@@ -9,8 +9,10 @@
     <!-- Requirede meta tags -->
     <meta charset="utf-8">
     {{ .Hugo.Generator }}
-     {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/opengraph.html" . }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {{ partial "head_stylesheets.html" . }}
+    {{ $theme := resources.Get "/css/styles.css" }}
+
+    <!-- {{ partial "head_stylesheets.html" . }} -->
 </head>
