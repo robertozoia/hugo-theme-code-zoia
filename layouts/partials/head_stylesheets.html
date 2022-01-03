@@ -1,4 +1,4 @@
-{{- $theme := resources.Get "css/styles.css" }}
+{{- $theme := resources.Get "/css/styles.css" }}
 {{- if hugo.IsProduction }}
 <style>{{- ($theme.Content | minify).Content | safeCSS }}</style>
 {{- else }}
