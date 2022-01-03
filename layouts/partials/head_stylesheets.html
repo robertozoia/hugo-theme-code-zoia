@@ -1,6 +1,2 @@
 {{ $theme := resources.Get "css/styles.css" }}
-{{- if hugo.IsProduction }}
-<style>{{- ($theme.Content | minify).Content | safeCSS }}</style>
-{{- else }}
-<style>{{- $theme.Content | safeCSS }}</style>
-{{- end }}
+<style>{{ $theme.Content | safeCSS }}</style>
