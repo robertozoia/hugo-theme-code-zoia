@@ -12,7 +12,7 @@
     {{ template "_internal/opengraph.html" . }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {{ $theme := .Resources.Get "css/styles.css" }}
+    {{ $theme := .Resources.GetMatch "css/styles.css" }}
 
     <!-- {{ partial "head_stylesheets.html" . }} -->
 </head>
