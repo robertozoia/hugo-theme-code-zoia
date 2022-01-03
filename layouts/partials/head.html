@@ -12,5 +12,6 @@
     {{ template "_internal/opengraph.html" . }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {{ $local := resources.Get "css/styles.css" }}
+    {{ $stylesheet := resources.Get "css/styles.css" }}
+    <style>{{ $stylesheet.Content | safeCSS }}</style>
 </head>
