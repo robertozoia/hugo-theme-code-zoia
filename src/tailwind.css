@@ -108,6 +108,10 @@ article ol li p {
 .footnotes {
 }
 
+.footnotes ol li:before {
+  vertical-align: sup;
+}
+
 .footnotes ol li p {
   margin-top: -10px;
   display: inline;
