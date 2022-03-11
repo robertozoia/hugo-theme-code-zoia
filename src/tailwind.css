@@ -100,10 +100,12 @@ article ol {
 /**
  * Footnotes
  **/
-section .footnotes {
+.footnotes {
 }
 
-section .footnotes p {
+.footnotes ol li p {
+  margin-top: -10px;
+  display: inline;
 }
 
 /**
