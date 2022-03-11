@@ -97,6 +97,11 @@ article ol {
   margin: 1em 0 1em 0.6em;
 }
 
+article ol li p {
+  margin-top: -10px;
+  display: inline;
+}
+
 /**
  * Footnotes
  **/
