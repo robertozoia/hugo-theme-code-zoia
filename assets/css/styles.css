@@ -564,10 +564,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: table;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-3\.5 {
   height: 0.875rem;
 }
@@ -578,10 +574,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-3\.5 {
@@ -850,6 +842,8 @@ article ol li p {
  **/
 
 .footnotes {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .footnotes ol li p {
