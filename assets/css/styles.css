@@ -847,6 +847,8 @@ article ol li p {
 }
 
 .footnotes ol li p {
+  font-size: 0.75rem;
+  line-height: 1rem;
   margin-top: -10px;
   display: inline;
 }
