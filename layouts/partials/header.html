@@ -9,11 +9,14 @@
                    uppercase
                    "
         >
-            <!-- {{ partial "logo.html" . }} -->
+            {{ partial "./logo.html" . }}
             {{ range .Site.Menus.main }}
-                <li><a class="text-sm md:p-4 py-2 block hover:underline" href="{{ .URL }}">{{ .Name }}</a></li>
+            <li>
+                <a class="text-sm md:p-4 py-2 block hover:underline" href="{{ .URL }}">
+                    {{ .Name }}
+                </a>
+            </li>
             {{ end }}
-
         </ul>
     </nav>
 </header>
