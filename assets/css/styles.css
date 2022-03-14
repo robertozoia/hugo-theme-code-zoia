@@ -914,11 +914,20 @@ ul.pagination li.page-item {
     padding-bottom: 0px;
   }
 
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
 
   .md\:pt-3 {
     padding-top: 0.75rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
   }
 }
