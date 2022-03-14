@@ -631,6 +631,11 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: right;
 }
 
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -741,6 +746,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-logoleft {
   --tw-text-opacity: 1;
   color: rgb(252 108 12 / var(--tw-text-opacity));
+}
+
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
 .no-underline {
