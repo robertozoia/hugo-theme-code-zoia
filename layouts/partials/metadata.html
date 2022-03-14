@@ -2,7 +2,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
     </svg>
-    <time class="text-sm font-light text-gray-500 mr-1.5 inline" datetime='{{ .Date.Format "2006-01-02" }}'>
+    <time class="text-sm font-light text-gray-500 mr-2 inline" datetime='{{ .Date.Format "2006-01-02" }}'>
         {{ .Date.Format (default "January 2, 2006" .Site.Params.date_format) }}
     </time>
 
@@ -13,7 +13,7 @@
         {{ with .Params.tags }}
             {{ range . }}
                 {{ $href := print (absURL "tags/") (urlize .) }}
-                <a class="inlne font-light text-gray-500 no-underline text-xs uppercase" href="{{ $href }}">{{ . }}</a>
+                <a class="inlne font-light mr-1.5 text-gray-500 no-underline text-xs uppercase" href="{{ $href }}">{{ . }}</a>
             {{ end }}
         {{ end }}
                 {{ end }}
