@@ -653,6 +653,11 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: left;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
