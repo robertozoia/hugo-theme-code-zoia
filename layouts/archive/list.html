@@ -16,7 +16,7 @@
             {{ range (where .Site.Pages "Section" "post")  }}
                 <tr>
                     <td class="pt-1 pb-1 pr-2">
-                        {{ .PublishDate.Format "2006-02-01" }}
+                        {{ .PublishDate.Format "2006-01-02" }}
                     </td>
                     <td class="pt-1 pb-1 pl-2">
                         <a href="{{ .RelPermalink }}">
