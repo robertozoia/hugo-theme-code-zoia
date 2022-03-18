@@ -1,5 +1,11 @@
 {{ define "main" }}
-    <article class="pb-4 mb-10">
+
+{{ if .Params.featured_image }}
+<div><img src="images/{{ .Params.featured_image }}" /></div>
+
+{{ end }}
+
+<article class="pb-4 mb-10">
         <header class="border-b">
             <h1 class="text-3xl font-sans font-normal">{{ .Title | markdownify }}</h1>
             {{ partial "metadata.html" . }}
