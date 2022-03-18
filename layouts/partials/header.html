@@ -1,14 +1,13 @@
 <header class="container relative subpixel-antialiased">
 
-    <nav class="flex flex-col
+    <nav class="flex
+                flex-row
                 justify-between
                 w-full
                 md:py-0
-                md:flex-row
                 mt-1.5
                 bg-white">
-        <div class="
-                    pt-4">
+        <div class="pt-4">
             <a href="/" title="zoia.org">
               <span class="text-xl" style="color: rgb(252, 108, 12);"
               >{{ .Site.Params.site_logo_left }}</span><span
@@ -18,7 +17,7 @@
               </span>
             </a>
         </div>
-        <div class="order-last">
+        <div>
         <ul class="text-base
                    pt-4
                    md:pt-0
