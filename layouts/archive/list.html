@@ -1,4 +1,9 @@
 {{ define "main" }}
+
+{{ if .Params.featured_image }}
+    <div><img src="{{ .Params.featured_image }}" /></div>
+
+{{ end }}
     <div>
         {{ .Content }}
     </div>
