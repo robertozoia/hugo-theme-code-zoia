@@ -13,7 +13,7 @@
                 </tr>
             </thead>
             <tbody>
-            {{ range (where (where .Site.Pages "Section" "post") "Params.hidden" "!=" true  }}
+            {{ range (where (where .Site.Pages "Section" "post") "Params.hidden" "!=" true)  }}
                 <tr>
                     <td class="pt-1 pb-1 pr-2">
                         {{ .PublishDate.Format "2006-01-02" }}
