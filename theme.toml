@@ -14,8 +14,3 @@ min_version = "0.41.0"
   name = "Roberto Zoia"
   homepage = ""
 
-[params]
-  author = ""
-  favicon = ""
-  site_logo_left = "zoia"
-  site_logo_right = "org"
