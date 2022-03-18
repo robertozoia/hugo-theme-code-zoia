@@ -13,12 +13,13 @@
                 </tr>
             </thead>
             <tbody>
-            {{ range (where (where .Site.Pages "Section" "post")  }}
+            {{ range (where .Site.Pages "Section" "post")  }}
                 <tr>
                     <td class="pt-1 pb-1 pr-2">
                         {{ .PublishDate.Format "2006-01-02" }}
                     </td>
                     <td class="pt-1 pb-1 pl-2">
+                        {{ .File.Path }}
                         <a href="{{ .RelPermalink }}">
                             {{ trim .Title " " }}
                         </a>
