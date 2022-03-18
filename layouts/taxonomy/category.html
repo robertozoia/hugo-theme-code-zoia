@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<article class="article">
+    <h2>Posts in the {{ .Title }} category</h2>
+
+    <div>{{ .Content }}</div>
+
+    {{ range.Paginator.Pages }}
+    <div class="">
+        <h2>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+    </div>
+    {{ end }}
+</article>
+
+{{ if gt .Paginator.TotalPages 1 }}
+    {{ template "_internal/pagination.html" . }}
+{{ end }}
+
+{{ end }}
