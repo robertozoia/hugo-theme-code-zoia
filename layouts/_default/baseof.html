@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>
+<body>
+    <div class="container md:h-screen" style="border: 1px solid #ccc;">
         <div class="container max-w-screen-md mx-auto">
             {{- partial "header.html" . -}}
         </div>
@@ -9,13 +10,13 @@
             content
             container
             max-w-screen-md
-            md:h-screen
             mx-auto
             mt-8
             pb-16
             -mb-4">
         {{- block "main" . }}{{- end }}
         </div>
-        {{ partial "footer.html" . }}
+    {{ partial "footer.html" . }}
+    </div>
     </body>
 </html>
