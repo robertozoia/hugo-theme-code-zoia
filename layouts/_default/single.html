@@ -1,13 +1,19 @@
-{{ define "main" }} {{ if .Params.featured_image }}
-<div><img src="images/{{%20.Params.featured_image%20}}"></div>{{
-end }}
+{{ define "main" }}
+
+{{ if .Params.featured_image }}
+<div><img src="images/{{ .Params.featured_image }}" /></div>
+
+{{ end }}
+
 <article class="pb-4 mb-10">
-    <header>
-        <h1 class="text-3xl font-sans font-normal">{{ .Title |
-        markdownify }}</h1>{{ partial "metadata.html" . }}
-        <div class="border-b border-neutral-600 w-14"></div>
-    </header>
-    <div class="mt-3 font-sans font-light text-gray-900">
-        {{ .Content }}
-    </div>
-</article>{{ end }}
+        <header>
+            <h1 class="text-3xl font-sans font-normal">{{ .Title | markdownify }}</h1>
+            {{ partial "metadata.html" . }}
+            <div class="border-b border-neutral-600 w-14">
+        </header>
+        <div class="mt-3 font-sans font-light text-gray-900">
+            {{ .Content }}
+        </div>
+    </article>
+
+{{ end }}
