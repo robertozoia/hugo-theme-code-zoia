@@ -1031,6 +1031,12 @@ ul.pagination li.page-item {
     height: 100vh;
   }
 
+  .md\:h-max {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+
   .md\:w-screen {
     width: 100vw;
   }

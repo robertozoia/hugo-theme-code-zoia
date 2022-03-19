@@ -2,21 +2,20 @@
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
 <body>
-    <div class="container md:h-screen md:w-screen" style="border: 1px solid #ccc;">
         <div class="container max-w-screen-md mx-auto">
             {{- partial "header.html" . -}}
         </div>
         <div class="
             content
             container
+            md:h-max
             max-w-screen-md
             mx-auto
             mt-8
             pb-16
-            -mb-4">
+            ">
         {{- block "main" . }}{{- end }}
         </div>
     {{ partial "footer.html" . }}
-    </div>
     </body>
 </html>
