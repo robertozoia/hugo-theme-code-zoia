@@ -648,6 +648,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
+.content-end {
+  align-content: flex-end;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
