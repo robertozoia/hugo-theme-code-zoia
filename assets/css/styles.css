@@ -1024,4 +1024,8 @@ ul.pagination li.page-item {
   .md\:pt-3 {
     padding-top: 0.75rem;
   }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
+  }
 }
