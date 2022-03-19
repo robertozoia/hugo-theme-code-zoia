@@ -588,6 +588,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: auto;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -789,6 +793,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-left {
