@@ -584,6 +584,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: -1rem;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .block {
   display: block;
 }
