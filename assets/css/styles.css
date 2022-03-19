@@ -1015,6 +1015,10 @@ ul.pagination li.page-item {
     display: flex;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
