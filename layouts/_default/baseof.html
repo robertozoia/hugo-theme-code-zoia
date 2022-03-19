@@ -2,10 +2,10 @@
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
     <body>
-        <div class="container max-w-screen-md mx-auto">
+        <div class="container max-w-screen-md mx-auto subpixel-antialiased">
             {{- partial "header.html" . -}}
         </div>
-        <div class="content container max-w-screen-md mx-auto mt-8 pb-16">
+        <div class="content container max-w-screen-md mx-auto mt-8 pb-16 subpixel-antialiased">
         {{- block "main" . }}{{- end }}
         </div>
         {{ partial "footer.html" . }}
