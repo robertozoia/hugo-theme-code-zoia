@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>
+    <body class="md:h-screen">
         <div class="container max-w-screen-md mx-auto">
             {{- partial "header.html" . -}}
         </div>
-        <div class="content container max-w-screen-md md:h-screen mx-auto mt-8 pb-16">
+        <div class="content container max-w-screen-md mx-auto mt-8 pb-16">
         {{- block "main" . }}{{- end }}
         </div>
         {{ partial "footer.html" . }}
