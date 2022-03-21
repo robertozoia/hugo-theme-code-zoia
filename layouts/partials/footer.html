@@ -22,7 +22,9 @@
                         md:py-4
                         justify-start">
             &copy; {{ with .Site.Copyright | default .Site.Title }}
-{{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+            {{ now.Format "2006"}}
+            {{ . | safeHTML }}
+            {{ end }}
             </div>
             <ul class="
                        text-base
