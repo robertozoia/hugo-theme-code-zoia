@@ -84,9 +84,16 @@ article ul li ul {
   list-style-type: disc;
 }
 
+article ol {
+  list-style: inside;
+}
+
 article ol li {
   /* https://www.joshwcomeau.com/css/styling-ordered-lists-with-css-counters/ */
   counter-increment: muffins;
+  padding-bottom: 0.6em;
+  text-indent: -1em;
+  margin-left: 1.8em;
 }
 article ol li:before {
   content: counter(muffins) ". ";
@@ -105,6 +112,11 @@ article ol li p {
 /**
  * Footnotes
  **/
+article a.footnote-ref,
+article a.footnote-backref {
+  text-decoration: none;
+}
+
 .footnotes {
   font-size: 0.75rem;
   line-height: 1rem;

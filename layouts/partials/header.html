@@ -1,13 +1,16 @@
 <header>
 
-    <nav class="flex
+    <nav class="fixed
+                flex
                 flex-row
+                border-b
+                border-neutral-200
                 justify-between
                 w-full
-                md:py-0
-                mt-1.5
+                px-7
+                md:py-1.5
                 bg-white">
-        <div class="pt-2 basis-1/3">
+        <div class="pt-2.5 basis-1/3">
             <a href="/" title="zoia.org">
               <span class="text-xl" style="color: rgb(252, 108, 12);"
               >{{ .Site.Params.site_logo_left }}</span><span
@@ -30,7 +33,7 @@
         >
             {{ range .Site.Menus.main }}
             <li>
-                <a class="
+                <a class="subpixel-antialiased
                           text-xs
                           text-neutral-400
                           sans-serif
