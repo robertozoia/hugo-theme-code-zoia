@@ -16,6 +16,10 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'float-right',
+    'float-left',
+  ],
   variants: {
     extend: {},
   },

@@ -109,6 +109,9 @@ article ol li p {
   display: inline;
 }
 
+article figure {
+  padding: 1em;
+}
 /**
  * Footnotes
  **/
