@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-<head>
-    <title>
-        {{ block "title" . }}
-            {{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}
-        {{ end }}
-    </title>
-</head>
-<body>
   {{- partial "head.html" . -}}
+<body>
   <div class="flex flex-col h-screen justify-between">
-    <!-- div class="container max-w-screen-md mx-auto" -->
-    {{- partial "header.html" . -}} <!--  /div -->
+    {{- partial "header.html" . -}}
 
-    <div class=
-    "content container max-w-screen-md mx-auto mb-auto mt-24 pb-16">
+    <div class="
+                container
+                max-w-screen-md
+                mx-2
+                px-2
+                pb-16
+                mb-auto
+                mt-52
+                md:mx-auto
+                md:px-0
+                md:mt-24
+                md:mx-0
+                ">
       {{- block "main" . }}{{- end }}
-    </div>{{ partial "footer.html" . }}
+    </div>{{- partial "footer.html" . -}}
   </div>
 </body>
 </html>
