@@ -1,7 +1,8 @@
 {{ define "main" }}
 
-{{ if .Title  }}
-    <h1 class="text-3xl my-4">{{ .Title  }}</h1>
+
+{{ if .Title }}
+<h1 class="text-3xl my-4">{{ .Title }}</h1>
 {{ end }}
 
 {{ if .Params.featured_image }}
@@ -14,6 +15,11 @@
     {{ .Content }}
 </div>
 {{ end }}
+{{ $full_content := false }}
+{{ if isset .Params "full_content" }}
+    {{ $full_content = .Params.full_content }}
+{{ end }}
+
 {{- range (.Paginator 5).Pages }}
 
     {{ if eq .Type "post" }}
@@ -31,7 +37,11 @@
             <div class="font-sans font-light text-gray-900
                         border-b border-neutral-200
                         ">
-                {{ .Summary }} <a href="{{ .Permalink }}">Read more...</a>
+                {{ if $full_content }}
+                    {{ .Content }}
+                {{ else }}
+                    {{ .Summary }} <a href="{{ .Permalink }}">Read more...</a>
+                {{ end }}
             </div>
             {{ partial "metadata-bottom.html" . }}
         </article>

@@ -19,6 +19,11 @@ module.exports = {
   safelist: [
     "float-right",
     "float-left",
+    "grid", "grid-cols-2", "grid-cols-3", "col-span-2",
+    "gap-4",
+    "flex", "flex-col", "flex-row",
+    "flex-wrap",
+    "basis-1/3", "basis-2/3",
   ],
   variants: {
     extend: {},
