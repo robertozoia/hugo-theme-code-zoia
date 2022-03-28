@@ -21,22 +21,33 @@
                         flex
                         md:py-4
                         justify-start">
-            &copy; {{ with .Site.Copyright | default .Site.Title }}
-            {{ now.Format "2006"}}
-            {{ . | safeHTML }}
-            {{ end }}
+              <ul>
+                <li>
+                  Powered by <a
+                               target="_blank"
+                               href="https://gohugo.io"
+                               class="underline"
+                             >Hugo</a> and
+                  <a
+                    target="_blank"
+                    href="https://github.com/robertozoia/hugo-theme-ristretto"
+                    class="underline"
+                  >Ristretto</a>.
+                </li>
+                <li>
+                  {{ with .Site.Copyright | default .Site.Title }}
+                    {{ .  }}
+                  {{ end }}
+                </li>
             </div>
-            <div>
-                           </div>
             <ul class="
                        text-base
                        pt-4
                        md-flex
                        md:pt-0">
-            <span class="font-semibold">Links</span>
                 {{ range .Site.Menus.footer }}
                 <li>
-                    <a class="
+                    <a class="underline
                               text-xs
                               text-slate-300
                               sans-serif
@@ -44,8 +55,7 @@
                               font-light
                               md-pr-4
                               md:py-2
-                              block
-                              hover:underline"
+                              block"
                        href="{{ .URL }}">
                         {{ .Name }}
                     </a>
@@ -55,7 +65,8 @@
                         <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z" />
                         <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z" />
                         </svg> <a
-                        class="inline text-xs
+                        class="underline
+                               inline text-xs
                               text-slate-300
                               sans-serif
                               uppercase

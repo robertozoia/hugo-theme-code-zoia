@@ -170,3 +170,8 @@ ul.pagination li.page-item {
   text-decoration: underline;
   color: #0969da;
 }
+
+article .button {
+  @apply font-bold py-4 px-6 border-4 border-orange-300 rounded !important;
+  @apply text-neutral-500 no-underline hover:bg-orange-300 !important;
+}

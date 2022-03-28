@@ -25,13 +25,13 @@
                     </a>
                 </h2>
                 {{ partial "metadata.html" . }}
-                <div class="border-b border-neutral-600 w-14 h-5 mb-10"></div>
+                <div class="h-1"></div>
 
             </header>
             <div class="font-sans font-light text-gray-900
                         border-b border-neutral-200
                         ">
-                {{ .Content  }}
+                {{ .Summary }} <a href="{{ .Permalink }}">Read more...</a>
             </div>
             {{ partial "metadata-bottom.html" . }}
         </article>
