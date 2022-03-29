@@ -1207,6 +1207,11 @@ article .button:hover {
     padding-bottom: 0.375rem;
   }
 
+  .md\:py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }

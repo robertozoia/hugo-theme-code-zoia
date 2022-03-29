@@ -46,20 +46,21 @@
                        md-flex
                        md:pt-0">
                 {{ range .Site.Menus.footer }}
-                <li>
-                    <a class="underline
+              <li>
+                   <a class="underline
                               text-xs
                               text-slate-300
                               sans-serif
                               uppercase
                               font-light
                               md-pr-4
-                              md:py-2
+                              md:py-0.5
                               block"
                        href="{{ .URL }}">
                         {{ .Name }}
                     </a>
-                <li class="-mt-2"><svg xmlns="http://www.w3.org/2000/svg"
+                {{ end }}
+                <li><svg xmlns="http://www.w3.org/2000/svg"
                          class="inline h-5 w-5 fill-orange-500 -ml-6"
                          viewBox="0 0 20 20" fill="currentColor">
                         <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z" />
@@ -78,7 +79,6 @@
                         href="/index.xml">RSS</a>
                     </li>
   
-                {{ end }}
             </ul>
         </nav>
     </div>
