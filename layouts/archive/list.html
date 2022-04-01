@@ -13,14 +13,14 @@
         <table class="table-auto mt-10 font-sans font-light text-gray-900">
             <thead class="border-b">
                 <tr>
-                    <th class="text-left pt-1 pb-1">Date</th>
+                    <th class="text-left w-24 pt-1 pb-1">Date</th>
                     <th class="text-left pt-1 pb-1 pl-2">Article</th>
                 </tr>
             </thead>
             <tbody>
             {{ range where .Site.RegularPages "Section"  "post"}}
                 <tr>
-                    <td class="pt-1 pb-1 pr-2">
+                    <td class="ml-1 pt-1 pb-1">
                         {{ .PublishDate.Format "2006-01-02" }}
                     </td>
                     <td class="pt-1 pb-1 pl-2">
