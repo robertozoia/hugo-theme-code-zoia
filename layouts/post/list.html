@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ if .Params.featured_image }}
-    <div><img src="./images/{{ .Params.featured_image }}" /></div>
+    <div><img src="{{ .Permalink }}images/{{ .Params.featured_image }}" /></div>
 
 {{ end }}
 

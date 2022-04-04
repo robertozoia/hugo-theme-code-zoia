@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ if .Params.featured_image }}
-<div><img src="images/{{ .Params.featured_image }}" /></div>
+<div><img src="{{ .Permalink }}images/{{ .Params.featured_image }}" /></div>
 
 {{ end }}
 <article class="pb-4 mb-10">
