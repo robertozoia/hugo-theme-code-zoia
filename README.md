@@ -91,7 +91,7 @@ You can modify the `mailchimp_hide_subsciption` in the frontmatter to show or hi
 
 ## Modifying the Stylesheet
 
-`Ristretto` uses [TailwindCSS](https://tailwindcss.com) for styling. As TailwindCSS is a utility-first CSS framework, most styling decisions have been indicated directly in the templates HTML code. 
+`Ristretto` uses [TailwindCSS](https://tailwindcss.com) for styling. As TailwindCSS is a utility-first CSS framework, most styling decisions have been indicated directly in the template's HTML code. 
 
 When we don't control the output--for example, Markdown output--, the styles applied are defined in the `assets/css/styles.css` file. If you want to modify the CSS code, install TailwindCSS and modify the `src/tailwind.css` file. THen run the `build.sh` script so Tailwind rebuilds the `styles.css` file. 
 
