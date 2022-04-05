@@ -88,6 +88,40 @@ mailchimp_hide_subscription = false
 
 You can modify the `mailchimp_hide_subsciption` in the frontmatter to show or hide the subscription box on a per-page basis.
 
+## RSS feed
+
+### Full Content vs. Summary Content in feeds
+
+`Ristretto` will show full content for RSS feeds. The idea is to make this configurable in the future.  For now, if you want to change to summary content for your feeds, you'll need to modify the `rss.xml` template in `layouts/_default`:
+
+
+```
+  (...)
+  {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Content | html }}</description>
+    </item>
+    {{ end }}{{ end }}
+  </channel>
+```
+
+Go to the end of the file and change `.Content` for `.Summary`.
+
+### Excluding a page from the RSS feed
+
+If you need to exclude a page from appearing in the RSS feed, use the `rss_ignore` parameter in the frontmatter:
+
+``` toml
++++
+(...)
+rss_ignore = true
++++
+```
+
+
+
+
+
 
 ## Modifying the Stylesheet
 
