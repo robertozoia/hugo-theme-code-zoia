@@ -22,50 +22,7 @@
             </div>
         </div>
 
-        <!-- New menu -->
-        <!-- <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 z-50
-                            md:relative md:flex md:p-0 md:flex-row md:space-x-6">
-            <li class="md:hidden z-90 fixed top-4 right-6">
-                <a href="javascript:void(0)" class="text-right text-4xl" onclick="toggleMenu()">&times;</a>
-            </li>
-            <li>
-                <a class="text-black" href="#">Home</a>
-            </li>
-            <li>
-                <a class="text-black" href="#">Something</a>
-            </li>
-        </ul>
-        <div class="flex items-center md:hidden">
-            <button class="text-4xl font-bold duration-300" onclick="toggleMenu()">
-                &#9776;
-            </button>
-        </div>
-        <script>
-            var menu = document.getElementById('menu');
-            function toggleMenu() {
-                menu.classList.toggle('hidden');
-                menu.classList.toggle('w-full');
-                menu.classList.toggle('h-screen');
-            }
-        </script> -->
-        <!-- new menu -->
 
-        <!--
-        <ul 
-        
-         class="hidden
-                    basis-2/3
-                   flex
-                   flex-col
-                   md:flex-auto
-                   md:flex-row
-                   text-base
-                   pt-0
-                   md:pt-0
-                   justify-end
-                   place-items-end
-                   " 
-        -->
         <ul id="menu"
             class="hidden text-base fixed z-50 mt-9 md:mt-0 md:relative md:flex md:p-0 md:flex-row md:space-x-6">
             {{ range .Site.Menus.main }}
@@ -89,22 +46,13 @@
             <li class="md:hidden z-90 right-6 pt-2">
                 <a href="javascript:void(0)" class="text-right text-4xl" onclick="toggleMenu()">
                     <!-- "x "-->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                    {{ partialCached "svg_close.html" .}}
                 </a>
             </li>
         </ul>
         <div class="flex items-center md:hidden">
             <button class="text-4xl duration-300" onclick="toggleMenu()">
-                <!--- hamburger -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-
+                {{ partialCached "svg_hamburger.html" }}
             </button>
         </div>
         <script>
