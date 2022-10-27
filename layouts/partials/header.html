@@ -27,10 +27,10 @@
                 <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">&times;</a>
             </li>
             <li>
-                <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Home</a>
+                <a class="text-black opacity-70 hover:opacity-100 duration-300" href="#">Home</a>
             </li>
             <li>
-                <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Something</a>
+                <a class="text-black opacity-70 hover:opacity-100 duration-300" href="#">Something</a>
             </li>
         </ul>
         <div class="flex items-center md:hidden">
@@ -39,6 +39,14 @@
                 &#9776;
             </button>
         </div>
+        <script>
+            var menu = document.getElementById('menu');
+            function toggleMenu() {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('w-full');
+                menu.classList.toggle('h-screen');
+            }
+        </script>
         <ul class="basis-2/3
                    flex
                    flex-col
