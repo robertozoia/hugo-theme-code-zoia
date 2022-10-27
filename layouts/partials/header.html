@@ -46,13 +46,13 @@
             <li class="md:hidden z-90 right-6 pt-2">
                 <a href="javascript:void(0)" class="text-right text-4xl" onclick="toggleMenu()">
                     <!-- "x "-->
-                    {{ partialCached "svg_close.html" .}}
+                    {{ partial "svg_close.html" .}}
                 </a>
             </li>
         </ul>
         <div class="flex items-center md:hidden">
             <button class="text-4xl duration-300" onclick="toggleMenu()">
-                {{ partialCached "svg_hamburger.html" . }}
+                {{ partial "svg_hamburger.html" . }}
             </button>
         </div>
         <script>
