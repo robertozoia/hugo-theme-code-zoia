@@ -1380,6 +1380,10 @@ article .button:hover {
     margin-top: 6rem;
   }
 
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -1454,6 +1458,10 @@ article .button:hover {
 
   .md\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 }
 
