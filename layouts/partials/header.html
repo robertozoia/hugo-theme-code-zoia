@@ -24,7 +24,7 @@
 
 
         <ul id="menu"
-            class="hidden text-base block  md:bg-transparent fixed z-50 mt-9 md:mt-0  left-0 p-7 md:relative md:flex md:p-0 md:flex-row md:space-x-6">
+            class="hidden text-base block  md:bg-transparent fixed z-50 mt-9 md:mt-0  left-0 md:relative md:flex md:p-0 md:flex-row md:space-x-6">
             {{ range .Site.Menus.main }}
             <li>
                 <a class="left-0
@@ -48,7 +48,7 @@
             </li>
             {{ end }}
             <li class="md:hidden z-90 right-6 pt-2">
-                <a href="javascript:void(0)" class="text-right text-4xl bg-white" onclick="toggleMenu()">
+                <a href="javascript:void(0)" class="text-right text-4xl bg-white left-0 p-7" onclick="toggleMenu()">
                     {{ partial "svg_close.html" . }}
                 </a>
             </li>
