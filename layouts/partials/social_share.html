@@ -1,12 +1,16 @@
 {{ $url := printf "%s" .Permalink | htmlEscape }}
 {{ $title := .Title }}
-{{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s" $url
-}}
+{{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s" $url }}
+{{ $twitter_href := printf "https://twitter.com/share?url=%s&text=%s" $url $title }}
 
 <div class="flex space-x-2 items-end">
-    <a href="{{ $linkedin_href }}" target="_blank">
+    <a href="{{ $linkedin_href }}" target="_blank" aria-label="Share on LinkedIn">
         {{ partial "svg_linkedin.html" . }}</a>
-    {{ partial "svg_twitter.html" . }}
+    <a href="{{ $twitter_href }}" target="_blank" aria-label="Share on Twitter">
+        {{ partial "svg_twitter.html" . }}
+    </a>
     {{ partial "svg_fb.html" . }}
 
 </div>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
