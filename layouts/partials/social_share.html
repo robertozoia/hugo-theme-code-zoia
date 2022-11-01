@@ -4,6 +4,7 @@
 {{ $twitter_href := printf "https://twitter.com/share?url=%s&text=%s" $url $title }}
 
 <div class="flex space-x-2 items-end">
+    Share:
     <a href="{{ $linkedin_href }}" target="_blank" aria-label="Share on LinkedIn">
         {{ partial "svg_linkedin.html" . }}</a>
     <a href="{{ $twitter_href }}" target="_blank" aria-label="Share on Twitter">
