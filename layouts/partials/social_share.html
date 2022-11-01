@@ -1,4 +1,4 @@
-{{ $url := printf "%s" .Permalink | absLangURL }}
+{{ $url := printf "%q" .Permalink | safeHTMLAttr }}
 {{ $title := .Title }}
 {{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s" $url $title
 }}
