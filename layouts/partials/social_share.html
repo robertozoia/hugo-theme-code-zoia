@@ -1,6 +1,6 @@
 {{ $url := printf "%s" .Permalink | htmlEscape }}
 {{ $title := .Title }}
-{{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&amp;url=%" $url
+{{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&amp;url=%s" $url
 }}
 
 <div class="flex space-x-2 items-end">
