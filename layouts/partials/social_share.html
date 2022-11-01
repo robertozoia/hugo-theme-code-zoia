@@ -1,5 +1,11 @@
+{{ $url := printf "%s" .Permalink | absLangURL }}
+{{ $ title := .Title }}
+{{ $linkedin_href := printf "https://www.linkedin.com/sharing/share-offsite/?mini=true&url=%s&title=%s" $url $title
+}}
+
 <div class="flex space-x-2 items-end">
-    {{ partial "svg_linkedin.html" . }}
+    <a href="{{ $linkedin_href }}" target="_blank">
+        {{ partial "svg_linkedin.html" . }}</a>
     {{ partial "svg_twitter.html" . }}
     {{ partial "svg_fb.html" . }}
 
