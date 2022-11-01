@@ -17,7 +17,7 @@
     </div>
     {{ partial "metadata-bottom.html" . }}
 
-    {{ if .Params.social_share }}
+    {{ if not ($.Param "disable_share") }}
     {{ partial "social_share.html" . }}
     {{ end }}
 
