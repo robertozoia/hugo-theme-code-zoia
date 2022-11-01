@@ -17,7 +17,7 @@
     </div>
     {{ partial "metadata-bottom.html" . }}
 
-    {{ if not and (.Params.disable_share .Params.reply_to_disable) }}
+    {{ if not (and (.Params.disable_share .Params.reply_to_disable)) }}
     <div class="mt-10">
         {{ if not ($.Param "disable_share") }}
         <div class="mb-5 flex space-x-2.5 items-end">
