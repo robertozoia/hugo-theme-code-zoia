@@ -17,6 +17,10 @@
     </div>
     {{ partial "metadata-bottom.html" . }}
 
+    {{ if .Params.social_share }}
+    {{ partial "social_share.html" . }}
+    {{ end }}
+
     {{ if not .Params.reply_to_disable }}
     <div class="mt-10">
         {{ partial "reply_by_email.html" . }}
@@ -24,7 +28,7 @@
     {{ end }}
 </article>
 
-{{ partial "social_share.html" . }}
+
 
 {{ if not .Params.mailchimp_hide_subscription_box }}
 {{ partial "subscribe-form.html" . }}
