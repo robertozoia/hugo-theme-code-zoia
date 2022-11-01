@@ -1,4 +1,4 @@
-{{ $url := printf "%q" .Permalink | htmlEscape }}
+{{ $url := printf "%s" .Permalink | htmlEscape }}
 {{ $title := .Title }}
 {{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s" $url $title
 }}
