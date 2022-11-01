@@ -3,11 +3,10 @@
 {{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s" $url }}
 {{ $twitter_href := printf "https://twitter.com/share?url=%s&text=%s" $url $title }}
 
-<div class="mb-5 flex space-x-2 items-end">
-    <span class="pr-2">Share</span>
-    <a href=" {{ $linkedin_href }}" target="_blank" aria-label="Share on LinkedIn">
-        {{ partial "svg_linkedin.html" . }}</a>
-    <a href="{{ $twitter_href }}" target="_blank" aria-label="Share on Twitter">
-        {{ partial "svg_twitter.html" . }}
-    </a>
-</div>
+
+<span class="pr-2">Share</span>
+<a href=" {{ $linkedin_href }}" target="_blank" aria-label="Share on LinkedIn">
+    {{ partial "svg_linkedin.html" . }}</a>
+<a href="{{ $twitter_href }}" target="_blank" aria-label="Share on Twitter">
+    {{ partial "svg_twitter.html" . }}
+</a>

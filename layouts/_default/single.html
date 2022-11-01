@@ -17,13 +17,16 @@
     </div>
     {{ partial "metadata-bottom.html" . }}
 
-    {{ if not ($.Param "disable_share") }}
-    {{ partial "social_share.html" . }}
-    {{ end }}
 
     {{ if not .Params.reply_to_disable }}
     <div class="mt-10">
         {{ partial "reply_by_email.html" . }}
+    </div>
+    {{ end }}
+
+    {{ if not ($.Param "disable_share") }}
+    <div class="mb-5 flex space-x-2 items-end"></div>
+    {{ partial "social_share.html" . }}
     </div>
     {{ end }}
 </article>
