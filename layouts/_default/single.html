@@ -25,8 +25,8 @@
     {{ end }}
 
     {{ if not ($.Param "disable_share") }}
-    <div class="mb-5 flex space-x-2 items-end"></div>
-    {{ partial "social_share.html" . }}
+    <div class="mb-5 flex space-x-2 items-end">
+        {{ partial "social_share.html" . }}
     </div>
     {{ end }}
 </article>
