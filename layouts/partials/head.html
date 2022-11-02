@@ -1,7 +1,7 @@
 <head>
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}
-        {{ $title = .Site.Title }}
+    {{ $title = .Site.Title }}
     {{ end }}
     <title>
         {{ $title }}
@@ -10,6 +10,9 @@
     <meta charset="utf-8">
     {{ hugo.Generator }}
     {{ template "_internal/opengraph.html" . }}
+    {{- template "_internal/schema.html" . -}}
+    {{- template "_internal/twitter_cards.html" . -}}
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{ if .Site.Params.favicon }}
@@ -18,11 +21,11 @@
 
     {{ if .OutputFormats.Get "RSS" }}
     {{ with .OutputFormats.Get "RSS" }}
-      <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
-      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
-      {{ end }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    {{ end }}
     {{ end }}
 
 
-     {{ partial "head_stylesheets.html" . }}
+    {{ partial "head_stylesheets.html" . }}
 </head>
