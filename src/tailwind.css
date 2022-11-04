@@ -35,10 +35,11 @@ article h2 {
 }
 
 article h3 {
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: 700;
   color: #333;
 }
+
 /* Code highlight  */
 .highlight {
   margin: 1rem;
@@ -98,9 +99,11 @@ article ol li {
   text-indent: -1em;
   margin-left: 1.8em;
 }
+
 article ol li:before {
   content: counter(muffins) ". ";
 }
+
 article ol {
   list-style: none;
   counter-reset: muffins;
@@ -119,6 +122,7 @@ article figure {
 article img.image-with-shadow {
   @apply drop-shadow-md;
 }
+
 /**
  * Footnotes
  **/
@@ -160,14 +164,11 @@ ul.pagination li {
   background-color: #ddd;
 }
 
-ul.pagination li.active {
-}
+ul.pagination li.active {}
 
-ul.pagination li.disable {
-}
+ul.pagination li.disable {}
 
-ul.pagination li.page-item {
-}
+ul.pagination li.page-item {}
 
 /*
  * Archives
