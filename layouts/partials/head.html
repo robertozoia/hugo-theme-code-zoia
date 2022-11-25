@@ -11,7 +11,7 @@
     {{ hugo.Generator }}
     {{- template "_internal/opengraph.html" . -}}
     {{ if .Params.featured_image }}
-    <meta property="og:image" content="{{ .Params.featured_image }}">
+    <meta property="og:image" content="{{ .Permalink }}images/{{ .Params.featured_image }}">
     <meta property="og:image:secure_url" content="{{ .Permalink }}images/{{ .Params.featured_image }}">
     {{- end }}
     {{- template "_internal/schema.html" . -}}
